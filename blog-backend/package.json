@@ -12,7 +12,12 @@
   "license": "ISC",
   "description": "리액트 기초 공부의 끝!!!",
   "dependencies": {
-    "koa": "^2.15.3"
+    "@koa/router": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "joi": "^17.13.3",
+    "koa": "^2.15.3",
+    "koa-bodyparser": "^4.4.1",
+    "mongoose": "^8.9.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

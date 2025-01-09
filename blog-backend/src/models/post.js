@@ -13,6 +13,10 @@ const PostSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  user: {
+    _id: mongoose.Types.ObjectId,
+    username: String,
+  },
 });
 
 // 모델(스키마를 통해 만든 인스턴스) 생성

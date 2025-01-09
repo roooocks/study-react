@@ -8,6 +8,7 @@ import bodyParser from 'koa-bodyparser';
 import mongoose from 'mongoose';
 
 import api from './api/index.js'; // import { api } from './api'; 이건 에러가 걸리니 조심
+import jwtMiddleware from './lib/jwtMiddleware.js';
 // import createFakeData from './createFakeData.js';
 
 /// DB 관련
@@ -31,6 +32,7 @@ router.use('/api', api.routes()); // api/index.js의 라우터 적용
 
 // app 인스턴스에 라우터 적용 전 설정
 app.use(bodyParser());
+app.use(jwtMiddleware);
 
 // app 인스턴스에 라우터 적용
 app.use(router.routes()).use(router.allowedMethods());

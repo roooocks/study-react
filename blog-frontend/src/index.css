@@ -29,7 +29,7 @@ a {
 }
 
 * {
-  /* 모든 엘리먼트의 box-sizing 값을 border-box로 변경 */
+  /* 모든 엘리먼트의 box-sizing 값을 border-box로 변경(body 상속) */
   box-sizing: inherit;
 }
 
